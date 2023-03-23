@@ -1,0 +1,65 @@
+<html>
+  <head>
+    <title>Arbitrum Space Cats</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+  </head>
+  <body>
+
+    <div class="container stage pb-3">   
+    
+      <div class="row pt-3 pb-3">
+        <div class="col text-center">
+
+          <div class="pb-3">
+            <h1>Arbitrum Space Cats</h1>
+          </div>
+
+          <div id="error-message" style="display: none;">Error</div>
+
+          <div id="prepare">
+            <button class="button" id="btn-connect">
+              Connect
+            </button>
+          </div>
+
+          <div id="connected" style="display: none">
+
+            <div class="row pt-3">
+
+              <div class="col-12">
+                33 NFTs. 7 ARB each.<br>
+                "Mint" will let you approve 7 ARB, the next transaction will mint your NFT.
+              </div>
+
+              <div class="col-12 pt-3">
+                <button class="button" id="btn-mint">
+                  Mint
+                </button>
+              </div>
+
+              <div id="loading" style="max-width: 200px; display: none;"><img src="loading.gif" alt="loading"></div>
+
+            </div>
+
+          </div><!--end connected-->
+
+        </div>
+      
+      </div><!--end row-->
+    </div><!--end container-->
+
+    <!-- JavaScript: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+
+    <script src="//code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://unpkg.com/mustache@latest"></script>
+    <!-- Web3 -->
+    <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@walletconnect/web3-provider@1.8.0/dist/umd/index.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/web3modal@1.9.9/dist/index.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script type="module" src="shared.js"></script>
+    <script type="module" src="mint.js"></script>
+  </body>
+  
+</html>
